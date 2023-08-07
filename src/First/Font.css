@@ -1,0 +1,42 @@
+
+	   *{
+		margin:0;
+		padding:0;
+		font-family:Tahoma;
+		box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		-webkit-box-sizing:border-box;
+	  }
+	  
+	  .back{
+		position:fixed;
+		top:0;
+		left:0;
+		width:100%;
+		height:100vh;
+		display:flex;
+		justify-content:center;
+		align-items: center;
+	  }
+	  .back::before{
+		content:'';
+		position:fixed;
+		top:50%;
+		left:50%;
+		width:50%;
+		height:50%;
+		box-shadow: 5px 5px #80808042;
+		border-radius:50%;
+		background-color: #6607db;
+		transform:translate(-50%, -180%) scale(3);
+	  }
+	
+	
+	
+	  @media screen and (max-width:720px){
+		.back::before{
+		  border-radius:0;
+		}
+	  }
+	
+	 

@@ -1,0 +1,32 @@
+ /* Basic styling for the drop-up container */
+ .drop-up {
+    position: relative;
+    display: inline-block;
+  }
+
+  /* Styling for the button */
+  .drop-up button {
+    background-color: skyblue;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Styling for the dropdown content */
+  .drop-up .dropdown-content {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px;
+    z-index: 1;
+  }
+
+  /* Show the dropdown content when button is focused */
+  .drop-up button:focus + .dropdown-content {
+    display: block;
+  }
